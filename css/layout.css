@@ -1,0 +1,446 @@
+/* All */
+
+* {
+    font-size: 62.5%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+body {
+    margin-bottom: 200px;
+    margin: 0;
+}
+
+/* Navigation bar */
+
+/*
+@media only screen and (max-width: 800px) {
+    #logo {
+        display: none;
+    }
+}
+*/
+
+.logo-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.navigation-bar {
+    width: 100%;
+    align-self: center;
+	overflow: hidden;
+	white-space:nowrap; 
+	display: block;
+    text-align: center;
+    background-color: yellow;
+}
+
+.navigation-bar a {
+	display: inline-block;
+    position: relative;
+	color: black;
+	text-decoration: none;
+    width: 16.66%;
+	font-size: 1.7rem;
+    font-weight: bold;
+	white-space: nowrap; 
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation-bar a {
+        font-size: 1.2rem;
+        width: 15%;
+    }
+}
+
+ .navigation-bar a:hover {
+	background-color: orange;
+	color: black;
+}
+
+/* Home Page */
+
+.welcome-box {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 20px;
+}
+
+h1 {
+    color: orange;
+}
+
+@media only screen and (max-width: 700px) {
+    .welcome-box {
+        line-height: 60%; 
+        font-size: 2.5rem;
+    }
+}
+
+/* Our Service Page */
+
+.nest-flex {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+    .nest-flex {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nest-img {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+}
+
+.nest-box {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 3rem;
+}
+
+#nest-img {
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#nest-header {
+    color: orange;
+    text-decoration: underline;
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.expectations-box {
+    font-size: 5rem;
+    padding-right: 10px;
+    display: table;
+    margin: auto;
+}
+
+#expectations-header {
+    padding-left: 10px;
+    color: orange;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    width: 100%;
+    text-align: center;
+}
+
+/* About Wasps Page */
+
+.life-cycle-box {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 3rem;
+}
+
+#life-cycle-header {
+    color: orange;
+    text-decoration: underline;
+    font-size: 3.5rem;
+}
+
+.pest-flex {
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .pest-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#homerwasp {
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pest-box {
+    margin-left: 10px;
+    font-size: 3rem;
+}
+
+#pest-header {
+    color: orange;
+    text-decoration: underline;
+    font-size: 3.5rem;
+}
+
+#fear {
+    font-size: 2rem;
+}
+
+/* Process Page */
+
+.process-box {
+    font-size: 5rem;
+    margin-right: 10px;
+}
+
+#process-header {
+    margin-left: 10px;
+    color: orange;
+    text-decoration: underline;
+    font-size: 3.5rem;
+}
+
+#process-img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+/* Prices Page */
+
+#prices-header {
+    color: orange;
+    text-decoration: underline;
+    font-size: 6rem;
+    width: 100%;
+    text-align: center;
+}
+
+.prices {
+    font-size: 5rem;
+    display: table;
+    margin: auto;
+    width: 35%;
+}
+
+@media only screen and (max-width: 600px) {
+    .prices {
+        width: 98%;
+    }
+}
+
+#additional-charge {
+    font-size: 2.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Contact Us Page */
+
+#contact-header {
+    color: orange;
+    text-decoration: underline;
+    font-size: 5.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+#contact-subheader {
+    color: orange;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+#name {
+    margin-left: 10px;
+}
+
+.contacts {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.contact-info {
+    font-size: 4.5rem;
+}
+
+#phone-link {
+    font-size: 2rem;
+}
+
+#location {
+    font-size: 2rem;
+}
+
+#email-link {
+    font-size: 2rem;
+}
+
+.contact-flex {
+    display: flex;
+    width: 100%;
+    padding-left: 35%;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-flex {
+        flex-direction: column;
+        padding-left: 15%;
+    }
+}
+
+#profile {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 10px;
+}
+
+#vince-temp {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Slideshow */
+
+* {
+    box-sizing:border-box
+}
+
+@media only screen and (max-width: 600px) {
+    .slideshow-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    height: auto;
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slides {
+    width:100%; 
+    height: auto; 
+    max-height: 500px;
+}
+
+@media only screen and (max-width: 420px) {
+    .slides {
+        max-height: 200px;
+    }
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: black;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/*
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+*/
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Footer */
+
+#footer {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 100px;
+}
