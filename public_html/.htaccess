@@ -1,0 +1,39 @@
+# Enable the RewriteEngine
+RewriteEngine On
+
+# Redirect requests for .html URLs to clean URLs
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Internally rewrite clean URLs to their .html counterparts
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^ %{REQUEST_URI}.html [L]
+
+# Security ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# Disable directory browsing
+Options -Indexes
+
+# Protect .htaccess and .htpasswd files
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>
+
+# Protect sensitive files
+<FilesMatch "(\.ini|\.log|\.conf|README|LICENSE|CHANGELOG|install\.php)$">
+    Require all denied
+</FilesMatch>
+
+# Disable server signature
+ServerSignature Off
+
+# Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Add Content Security Policy
+Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline'; object-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none';"
+
+# Enable HSTS
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
